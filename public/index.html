@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <div>
+    <video id="receivedVideo" autoplay></video>
+    <video id="localVideo" autoplay muted></video>
+    <button id="makeCallButton">Call</button>
+    <button id="hangUpButton" disabled>Hang Up</button>
+  </div>
+
+  <script src="./scripts/adapter.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+  <script src="./scripts/webrtc.js"></script>
+</body>
+</html>
